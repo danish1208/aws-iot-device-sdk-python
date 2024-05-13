@@ -100,7 +100,7 @@ mode = my_check_in_manager.mode
 
 skip_when_match(ModeIsALPN(mode).And(
     Python2VersionLowerThan((2, 7, 10)).Or(Python3VersionLowerThan((3, 5, 0)))
-), "This test is not applicable for mode %s and Python verison %s. Skipping..." % (mode, sys.version_info[:3]))
+), "This test is not applicable for mode %s and Python version %s. Skipping..." % (mode, sys.version_info[:3]))
 
 simple_thread_manager = simpleThreadManager()
 
